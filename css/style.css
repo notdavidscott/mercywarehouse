@@ -1,0 +1,264 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+/* font-family: 'Montserrat', sans-serif; */
+
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+blockquote {
+
+  border-color: rgb(255, 132, 17);
+  
+}
+.resp-text {
+  font-size: 1.15em;
+}
+
+.banner-size {
+  font-size: 4.3rem;
+}
+.heavy-font {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.page-footer {
+  background-color: rgb(231, 231, 231);
+  margin-top: 100px
+}
+
+.mentions-section {
+  padding: 30px 0px;
+}
+
+.mentions-content {
+  padding: 20px 0px;
+}
+
+.mini-gallery {
+  padding: 20px 0px;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#missionVideo {
+  min-width: 100%; 
+  width: auto; 
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+.gallery-text {
+  font-size: 3em;
+}
+
+.that-orange-text {
+  color: rgb(255, 132, 17);
+}
+.that-orange-color {
+  color: rgb(255, 132, 17);
+  color: white;
+}
+
+.card-reveal {
+  background-color: rgb(255, 161, 73) !important;
+}
+.contact-container {
+  background-color: rgb(247, 247, 247);
+  padding: 25px 0px;
+  border: 1px solid rgb(185, 185, 185);
+  margin: 10px 0px 50px 0px;
+}
+
+.icons {
+  font-size: 4em;
+  padding-top: 30px;
+}
+.embeded-map {
+  width: 100%;
+  height: 430px;
+}
+.embeded-video {
+ background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3IkZsSdf6mBYq_V-GRI949WSL7tx7o1F8fcKMdLnrPHfHsVl-");
+ background-color: black; 
+ background-size: cover;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+#donate {
+  background-color: rgb(247, 247, 247);
+}
+.howto-numbers {
+  font-size: 6em;
+  color: rgb(255, 123, 0);
+}
+
+.step-desc {
+  text-align: left;
+  font-size: 1.5rem;
+  margin-top: 3%; 
+  color: rgb(128, 128, 128);
+}
+
+.company-logo {
+  height: 5rem;
+  width: auto;
+  margin: 0px 10px;
+}
+
+.fb-section {
+  background-color: rgb(247, 247, 247);
+  padding: 10px 0px;  
+}
+
+.gallery {
+  padding: 10px 0px; 
+}
+
+.embeded-map {
+  margin-top: 80px;
+}
+
+.fl-fl {
+  background: rgb(247, 119, 0);
+  opacity: .9;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 4px;
+  width: 190px;
+  position: fixed;
+  right: -150px;
+  z-index: 1000;
+  font: normal normal 10px Arial;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.fab3 {
+  font-size: 20px;
+  color: #fff;
+  padding: 10px 0;
+  width: 40px;
+  margin-left: 10px;
+}
+.fab2 {
+  margin-left: 5px;
+}
+.fab4 {
+  margin-left: 6.3px;
+}
+
+
+.fl-fl:hover {
+  right: 0;
+}
+
+.fl-fl a {
+  color: #fff !important;
+  text-decoration: none;
+  text-align: center;
+  line-height: 43px!important;
+  vertical-align: top!important;
+}
+
+.float-fb {
+  top: 225px;
+}
+
+.float-tw {
+  top: 280px;
+}
+
+.float-ye {
+  top: 335px;
+}
+
+.float-gp {
+  top: 390px;
+}
+
+
+.lighten-image {
+  opacity: 1;
+}
+
+
+/* Floating Social Media Bar Style Ends Here */
+
+
+/* *********** MEDIA QUERIES *********** */
+
+@media only screen and (max-width : 992px) {
+
+  .parallax {
+    height: 50%;
+  }
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  
+  #index-banner .section {
+    top: 10%;
+  }
+  .embeded-map {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  
+  .contact-text1 {
+    margin: 0px 0px 50px 0px;
+  }
+
+.contact-container {
+  border: none;
+}
+  #index-banner .section {
+    top: 0;
+  }
+
+  .embeded-map {
+    width: 100%;
+    height: 300px;
+  }
+  .food-table {
+    margin-top: 50px;
+  }
+
+  .step-desc {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 3%; 
+    color: rgb(128, 128, 128);
+  }
+}
+.icon-block {
+  padding: 0px, 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
