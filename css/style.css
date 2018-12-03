@@ -65,6 +65,9 @@ blockquote {
   color: white;
 }
 
+.pointer {
+  cursor: pointer;
+}
 .card-reveal {
   background-color: rgb(255, 161, 73) !important;
 }
