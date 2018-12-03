@@ -1,8 +1,10 @@
+/** CSS by David Perez for Mercy Warehouse Site **/
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700');
-/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Montserrat', sans-serif; */ /* ADD TO CLASS TO CHANGE FONT*/
 
 
+/* GENERAL CSS FOR GLOBALS ADD TAG TO ADD STYLING */
 nav ul a,
 nav .brand-logo {
   color: #444;
@@ -12,40 +14,100 @@ p {
   line-height: 2rem;
 }
 blockquote {
-
   border-color: rgb(255, 132, 17);
-  
 }
 .resp-text {
   font-size: 1.15em;
-}
-
-.banner-size {
-  font-size: 4.3rem;
 }
 .heavy-font {
   font-family: 'Montserrat', sans-serif !important;
 }
 
-.page-footer {
-  background-color: rgb(231, 231, 231);
-  margin-top: 100px
+.banner-size {
+  font-size: 4.3rem;
 }
+
+.underline {
+  border-bottom: 3px solid #fd7b01;
+  margin: 0px 45%;
+}
+
+.that-orange-text {
+  color: rgb(255, 132, 17);
+}
+.that-orange-color {
+  color: #ff8411;
+  color: white;
+}
+
+.that-blue-color {
+  color: #118CFF !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.lighten-image {
+  opacity: 1;
+}
+
+/************** END GLOBALS **/
+
+
+/** SECTIONS AND CONTAINERS *********************/
 
 .mentions-section {
   padding: 30px 0px;
-}
-
-.mentions-content {
-  padding: 20px 0px;
+  font-size: 1.30em;
 }
 
 .mini-gallery {
   padding: 20px 0px;
 }
 
+
+.parallax-container {
+  min-height: 390px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+
+#donate {
+  background-color: rgb(247, 247, 247);
+}
+
+.fb-section {
+  background-color: rgb(247, 247, 247);
+  padding: 10px 0px;  
+}
+
+/** END **** SECTIONS *********************/
+
+.page-footer {
+  background-color: rgb(231, 231, 231);
+  margin-top: 100px
+}
+
+.mentions-content {
+  padding: 20px 0px;
+}
+
+.contact-container {
+  background-color: rgb(247, 247, 247);
+  padding: 25px 0px;
+  border: 1px solid rgb(185, 185, 185);
+  margin: 10px 0px 50px 0px;
+}
+
+
 /* Style the video: 100% width and height to cover the entire window */
-#missionVideo {
+#missionVideo {  
   min-width: 100%; 
   width: auto; 
 }
@@ -57,25 +119,8 @@ blockquote {
   font-size: 3em;
 }
 
-.that-orange-text {
-  color: rgb(255, 132, 17);
-}
-.that-orange-color {
-  color: rgb(255, 132, 17);
-  color: white;
-}
-
-.pointer {
-  cursor: pointer;
-}
 .card-reveal {
   background-color: rgb(255, 161, 73) !important;
-}
-.contact-container {
-  background-color: rgb(247, 247, 247);
-  padding: 25px 0px;
-  border: 1px solid rgb(185, 185, 185);
-  margin: 10px 0px 50px 0px;
 }
 
 .icons {
@@ -92,19 +137,6 @@ blockquote {
  background-size: cover;
 }
 
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
-}
-  .parallax-container .section {
-    width: 100%;
-  }
-
-#donate {
-  background-color: rgb(247, 247, 247);
-}
 .howto-numbers {
   font-size: 6em;
   color: rgb(255, 123, 0);
@@ -123,10 +155,7 @@ blockquote {
   margin: 0px 10px;
 }
 
-.fb-section {
-  background-color: rgb(247, 247, 247);
-  padding: 10px 0px;  
-}
+
 
 .gallery {
   padding: 10px 0px; 
@@ -136,6 +165,7 @@ blockquote {
   margin-top: 80px;
 }
 
+/* Floating Social BUTTONS START ****************/
 .fl-fl {
   background: rgb(247, 119, 0);
   opacity: .9;
@@ -168,7 +198,6 @@ blockquote {
   margin-left: 6.3px;
 }
 
-
 .fl-fl:hover {
   right: 0;
 }
@@ -196,15 +225,9 @@ blockquote {
 .float-gp {
   top: 390px;
 }
-
-
-.lighten-image {
-  opacity: 1;
-}
-
-
 /* Floating Social Media Bar Style Ends Here */
 
+/* HI */
 
 /* *********** MEDIA QUERIES *********** */
 
