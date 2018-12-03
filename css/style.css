@@ -33,7 +33,7 @@ blockquote {
 }
 
 .that-orange-text {
-  color: rgb(255, 132, 17);
+  color: rgb(255, 132, 17) !important;
 }
 .that-orange-color {
   color: #ff8411;
@@ -52,20 +52,30 @@ blockquote {
   opacity: 1;
 }
 
+.addspacecontainer {
+  padding: 50px 0px;
+}
+
 /************** END GLOBALS **/
 
 
 /** SECTIONS AND CONTAINERS *********************/
 
-.mentions-section {
-  padding: 30px 0px;
+
+.spotlight-section {
+  padding: 60px 0px;
   font-size: 1.30em;
 }
 
 .mini-gallery {
   padding: 20px 0px;
+
 }
 
+.mini-gallery-container {
+  padding: 50px 0px;
+  background-color: rgba(223, 223, 223, 0.425) !important;
+}
 
 .parallax-container {
   min-height: 390px;
