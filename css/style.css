@@ -56,6 +56,10 @@ blockquote {
   padding: 50px 0px;
 }
 
+.blur-me {
+  filter: blur(.5px);
+}
+
 /************** END GLOBALS **/
 
 
@@ -69,12 +73,13 @@ blockquote {
 
 .mini-gallery {
   padding: 20px 0px;
-
 }
 
 .mini-gallery-container {
   padding: 50px 0px;
   background-color: rgba(223, 223, 223, 0.425) !important;
+  /* background-image: url("../imgs/clothes-rack-focus.jpg");
+  background-size: cover; */
 }
 
 .parallax-container {
@@ -90,6 +95,8 @@ blockquote {
 
 #donate {
   background-color: rgb(247, 247, 247);
+  padding: 50px 0px;
+  box-shadow: 1px 3px 10px rgb(202, 202, 202);
 }
 
 .fb-section {
@@ -97,11 +104,25 @@ blockquote {
   padding: 10px 0px;  
 }
 
+.map-container {
+  padding: 0px 0px 100px 0px;
+}
+
 /** END **** SECTIONS *********************/
 
 .page-footer {
   background-color: rgb(231, 231, 231);
   margin-top: 100px
+}
+.guide-border {
+  border: 6px solid #ffa047b7 !important;
+  padding: 0px 0px;
+}
+
+.guide-top {
+  margin: 0px 0px;
+  background-color:  rgb(255, 161, 73) !important;
+  padding: 25px;
 }
 
 .mentions-content {
@@ -192,6 +213,10 @@ blockquote {
   -ms-transition: all .25s ease;
   -o-transition: all .25s ease;
   transition: all .25s ease;
+}
+
+.fas {
+  font-size: .97em;
 }
 
 .fab3 {
