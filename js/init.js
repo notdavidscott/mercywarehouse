@@ -28,6 +28,14 @@ $(function() {
     }, 600);
   });
 
+  // go to mission section home page on large only
+  $('#toMissionContainer').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : $('#mission').position().top                      // Scroll to top of body
+    }, 600);
+  });
+
+
   //go to hours contact page  
 
   $('#toHoursContainer').click(function() {      // button click
