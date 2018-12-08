@@ -7,6 +7,12 @@
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
+//get current year for copyright 
+
+let currentYear = "Copyright " + (new Date()).getFullYear() + " &#169; Mercy Warehouse";
+//console.log(currentYear);
+document.getElementById("getFooterText").innerHTML = currentYear;
+
 
 //actual return to top jquery
 $('#return-to-top').click(function() {      // button click
