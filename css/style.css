@@ -81,6 +81,7 @@ blockquote {
 .spotlight-section {
   padding: 60px 0px;
   font-size: 1.30em;
+  background-color: rgb(240, 240, 240);
 }
 
 .mini-gallery {
