@@ -28,9 +28,9 @@ $(document).ready(function() {
         var bottom_of_window = $(window).scrollTop() + $(window).height();
         
         /* If the object is completely visible in the window, fade it it */
-        if( bottom_of_window > bottom_of_object ){
+        if( bottom_of_window > (bottom_of_object - 70) ){
             
-            $(this).animate({'opacity':'1'},1000);
+            $(this).animate({'opacity':'1'},1200);
                 
         }
         
@@ -42,9 +42,9 @@ $(document).ready(function() {
       var bottom_of_window = $(window).scrollTop() + $(window).height();
       
       /* If the object is completely visible in the window, fade it it */
-      if( bottom_of_window > bottom_of_object ){
+      if( bottom_of_window > (bottom_of_object - 70)){
           
-          $(this).animate({'opacity':'1'},1600);
+          $(this).animate({'opacity':'1'},1400);
               
       }
       
@@ -56,9 +56,9 @@ $(document).ready(function() {
     var bottom_of_window = $(window).scrollTop() + $(window).height();
     
     /* If the object is completely visible in the window, fade it it */
-    if( bottom_of_window > bottom_of_object ){
+    if( bottom_of_window > (bottom_of_object - 70) ){
         
-        $(this).animate({'opacity':'1'},2200);
+        $(this).animate({'opacity':'1'},2000);
             
     }
     

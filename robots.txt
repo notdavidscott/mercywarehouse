@@ -1,0 +1,7 @@
+
+User-agent: *
+Disallow: /css/ 
+Disallow: /js/
+Crawl-delay: 30
+
+sitemap: mercywarehouse.com/sitemap.xml

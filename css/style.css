@@ -119,8 +119,13 @@ blockquote {
 
 .map-container {
   padding: 0px 0px 100px 0px;
+  background-image: linear-gradient( rgb(255, 255, 255), rgb(216, 216, 216));
+ 
 }
 
+.howtovolunteer {
+  background-color: rgb(235, 235, 235);
+}
 /** END **** SECTIONS ******************************************/
 
 .page-footer {
