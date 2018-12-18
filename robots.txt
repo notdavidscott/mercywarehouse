@@ -4,4 +4,4 @@ Disallow: /css/
 Disallow: /js/
 Crawl-delay: 30
 
-sitemap: mercywarehouse.com/sitemap.xml
+sitemap: https://www.mercywarehouse.com/sitemap.xml

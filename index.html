@@ -16,32 +16,37 @@
   <!--  CSS   -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"/>
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <!--  Global site tag (gtag.js) - Google Analytics  -->
 <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-131010905-1"></script>
 <script></script>
 </head>
 
-<body><nav class="white" role="navigation">
+<body>
+    <div class="isOpenContainer">     
+          <span class="center isOpenText" id="isOpenTextResult" style="font-size: 1em;"></span>
+    </div>
+
+      <nav class="white" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="/" class="brand-logo" title="Laguna Niguel Orange County Charity Logo"><img src="./imgs//MWH-Transparent-Logo.png" style="height:4rem"/></a>
       <ul class="right hide-on-med-and-down">
-            <li><a href="/warehouse" title="How to donate, volunteer">The Warehouse</a></li>
+            <li><a href="/thrift-store" title="How to donate, volunteer">Thrift Store</a></li>
+            <li><a href="/donate" title="Donate to provide food to those in need">Donate</a></li>
+            <li><a href="/history" title="Contact Orange County's Mercy Warehouse">Our History</a></li>
             <li><a href="/contact" title="Contact Orange County's Mercy Warehouse">Contact Us</a></li>
-            <li><a target="_blank" href="https://secure-q.net/Donations/VCCDonate/675" title="Donate to provide food to those in need">Donate</a></li>
           </ul>
        
-
-
 <!--  THIS NAV IS FOR MOBILE SCREENS ONLY  -->
      
 <ul id="nav-mobile" class="sidenav">
   <li><a id="logo-container" href="/" class="brand-logo"><img src="./imgs//MWH-Transparent-Logo.png" style="height:4rem" title="Laguna Niguel Orange County Charity Logo"/></a></li><br/>
-  <li class="active"><a href="/" title="Laguna Niguel Orange County Charity Logo">Home </a></li>
-  <li><a href="/warehouse" title="How to donate, volunteer">The Warehouse</a></li>
+  <li><a href="/" title="mercy warehouse home">Home</a></li>
+  <li><a href="/thrift-store" title="How to donate, volunteer">Thrift Store</a></li>
+  <li><a href="/donate" title="Donate to provide food to those in need">Donate</a></li>
+  <li><a href="/history" title="Contact Orange County's Mercy Warehouse">Our History</a></li>
   <li><a href="/contact" title="Contact Orange County's Mercy Warehouse">Contact Us</a></li>
-  <li><a target="_blank" href="https://secure-q.net/Donations/VCCDonate/675" title="Donate to provide food to those in need">Donate</a></li>
 </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger that-orange-text"><i class="material-icons">menu</i></a>
     </div>
@@ -54,8 +59,6 @@
 <span itemscope itemtype="http://schema.org/LocalBusiness" itemref="_url8"><div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
-
-<div class="addspacecontainer hide-on-med-and-down"></div>
 
 
         <h1 id="_name1" itemprop="name" class="header banner-size blur-text center" itemprop="organization">Mercy Warehouse</h1>
@@ -73,22 +76,16 @@
         </div>
 
 
-       
-<div class="addspacecontainer hide-on-med-and-down"></div>
-<div class="addspacecontainer2 hide-on-med-and-down"></div>
       </div> 
-      <p id="down-arrow" class="center hide-on-small-only" style="font-size: 4em;"><i class="medium material-icons">expand_more</i></p>
+      <!-- <p id="down-arrow" class="center hide-on-small-only" style="font-size: 4em;"><i class="medium material-icons">expand_more</i></p> -->
     </div>
 
 
 
     <div class="parallax">
       
-      <div class="lighten-image">
-      
-      <img src="./imgs/christmas-tree-focus.jpg" style="height:100wh;" alt="Christmas Tree in Warehouse Soup Kitchen"/>
-      <!--  <img src="./imgs/christmas-tree-focus.jpg" alt="Christmas Tree in Warehouse Soup Kitchen">  -->
-        </div>
+      <img src="./imgs/christmas-tree-focus.jpg" alt="Christmas Tree in Warehouse Soup Kitchen"/>
+       
     </div>
   </div>
 <!--  END BANNER  -->
@@ -140,7 +137,7 @@
           
           <div class="icon-block">
            
-            <p style="margin:0px;" class="center that-orange-text icons"><i class="material-icons"><a class="that-orange-text" href="./contact.html" title="pickup serving local communities">local_shipping</a></i></p>
+            <p style="margin:0px;" class="center that-orange-text icons"><i class="material-icons"><a class="that-orange-text" href="./contact" title="pickup serving local communities">local_shipping</a></i></p>
 
             <h2 class="center" style="font-size: 1.5em;">Volunteering</h2>
 
@@ -150,7 +147,7 @@
 
         <div class="col s12 m4 hidemedelay1" style="opacity:0;">
           <div class="icon-block">
-            <p style="margin:0px;" class="center that-orange-text icons"><i class="material-icons"><a class="that-orange-text" href="./contact.html" title="Thriftstore profits go to charity">group</a></i></p>
+            <p style="margin:0px;" class="center that-orange-text icons"><i class="material-icons"><a class="that-orange-text" href="./contact" title="Thriftstore profits go to charity">group</a></i></p>
             <h2 class="center" style="font-size: 1.5em;">Serving</h2>
 
             <p class="light">We use the profits from those sales to purchase <i>food for needy families</i> both in our own area and abroad. Through this process we are able to provide food for over 1000 people weekly. </p>
@@ -159,7 +156,7 @@
 
         <div class="col s12 m4 hidemedelay2" style="opacity:0;">
           <div class="icon-block">
-            <p style="margin:0px;" class="center that-orange-text icons"><a class="that-orange-text" href="./warehouse.html" title="giving to the mercy warehouse">
+            <p style="margin:0px;" class="center that-orange-text icons"><a class="that-orange-text" href="./thrift-store" title="giving to the mercy warehouse">
                 <i class="fas fa-gift"></i></a></p>
             <h2 class="center" style="font-size: 1.5em;">Giving</h2>
 
@@ -198,20 +195,34 @@
     </div>
   
 
-    <div class="container hideme" style="opacity:0;">
-      <div class="addspacecontainer">
-        <div class="section">
-          <div class="row">
-            <div class="col s12 center">
-              <h3><i class="mdi-content-send brown-text"></i></h3>
-              <h4 id="history">Our History</h4>
-              <div class="underline"></div>
-              <p class="left-align light resp-text">In the early 1990’s, Mike Hudgins, the founder of The Mercy Warehouse, was on a humanitarian trip to the impoverished nation of <a href="https://en.wikipedia.org/wiki/Kolkata#Economy" target="_blank" class="that-orange-text" title="calcutta humanitarian trip link">Calcutta, now named Kolkata</a>. While there, he decided that he would visit Mother Teresa. He wound up speaking with her in her compound while seated on a bench outside her bedroom door. She told him that he needed to “look, see, and do something about it” - even in his own hometown. This became the driving vision behind The Mercy Warehouse. We began doing just that in 2008 during the recession, and have been helping those in need ever since.</p>
+    <div class="spotlight-section">
+            
+        <div class="container">
+            <h4 class="center" id="history">Spotlight</h4>
+            <div class="underline"></div>
+          <div class="mentions-content hidemedelay1" style="opacity:0;">  
+            <blockquote>
+                "Because of the relationships the Mercy Warehouse has been able to cultivate with local grocers, they are able to buy food for pennies on the dollar to be freely distributed to those who would otherwise go hungry. We want to help them buy $1 million dollars worth of food."<br/>
+                <span class="grey-text right">- <a class="that-blue-color" href="https://liftfoundation.us/cause/mercy-warehouse-1-million-dollar-food-drive/" target="_blank">Lift Foundation</a></span>
+              </blockquote>
+          </div>
+
+           <!--  <blockquote>
+            
+              <span class="grey-text right">- <a href="https://www.ocregister.com/2010/07/20/mercy-warehouse-brings-food-to-laguna-niguel-hungry/" target="_blank">OC Register</a></span>
+            </blockquote> -->
+            <div class="mentions-content hidemedelay2" style="opacity:0;">
+            <blockquote id="_review9" itemprop="review" itemscope itemtype="http://schema.org/Review">
+            "Our Lady Lions did a great job helping sort and stock the 
+<span itemprop="reviewBody">merchandise for the store. It was great to see our players contributing to such a wonderful organization, and we look</span> forward to doing it again."<br/>
+            <span class="grey-text right">- <a class="that-blue-color" href="http://www.calpacathletics.com/article/2847" target="_blank" title="volunteer groups for a good cause">CAL PAC</a></span>
+          </blockquote>
             </div>
-        </div>
-</div>
-</div>
-</div>
+          
+          </div>
+          <div class="addspacecontainer"></div>
+      </div></span>
+      
 
 
 <div class="parallax-container valign-wrapper">
@@ -297,42 +308,15 @@
            </div>
 </div>
 
-
-          <div class="spotlight-section">
-            
-            <div class="container">
-                <h4 class="center" id="history">Spotlight</h4>
-                <div class="underline"></div>
-              <div class="mentions-content hidemedelay1" style="opacity:0;">  
-                <blockquote>
-                    "Because of the relationships the Mercy Warehouse has been able to cultivate with local grocers, they are able to buy food for pennies on the dollar to be freely distributed to those who would otherwise go hungry. We want to help them buy $1 million dollars worth of food."<br/>
-                    <span class="grey-text right">- <a class="that-blue-color" href="https://liftfoundation.us/cause/mercy-warehouse-1-million-dollar-food-drive/" target="_blank">Lift Foundation</a></span>
-                  </blockquote>
-              </div>
-
-               <!--  <blockquote>
-                
-                  <span class="grey-text right">- <a href="https://www.ocregister.com/2010/07/20/mercy-warehouse-brings-food-to-laguna-niguel-hungry/" target="_blank">OC Register</a></span>
-                </blockquote> -->
-                <div class="mentions-content hidemedelay2" style="opacity:0;">
-                <blockquote id="_review9" itemprop="review" itemscope itemtype="http://schema.org/Review">
-                "Our Lady Lions did a great job helping sort and stock the 
-<span itemprop="reviewBody">merchandise for the store. It was great to see our players contributing to such a wonderful organization, and we look</span> forward to doing it again."<br/>
-                <span class="grey-text right">- <a class="that-blue-color" href="http://www.calpacathletics.com/article/2847" target="_blank" title="volunteer groups for a good cause">CAL PAC</a></span>
-              </blockquote>
-                </div>
-              
-              </div>
-          </div></span>
           <div class="addspacecontainer"></div>
 
 
           <div class="center">
             <h3 class="hideme" style="opacity:0;">Let's see what we can do together.</h3>
             <br/>
-              <a href="./warehouse.html" class="orange2 z-depth-3 waves-effect waves-light btn hidemedelay1" style="opacity:0;" title="donation link">How to Donate </a>
+              <a href="./thrift-store" class="orange2 z-depth-3 waves-effect waves-light btn hidemedelay1" style="opacity:0;" title="donation link">How to Donate </a>
 
-              <a href="./warehouse.html" class="orange2 z-depth-3 waves-effect waves-light btn hidemedelay2" style="opacity:0;" title="vounteer link">How to Volunteer </a>
+              <a href="./thrift-store" class="orange2 z-depth-3 waves-effect waves-light btn hidemedelay2" style="opacity:0;" title="vounteer link">How to Volunteer </a>
              
           </div>
 
@@ -358,7 +342,7 @@
           <ul>
             <li><a class="black-text" href="/">Home</a></li>
             <li><a class="black-text" href="/contact">Contact</a></li>
-            <li><a class="black-text" href="/warehouse">The Warehouse</a></li>
+            <li><a class="black-text" href="/thrift-store">The Warehouse</a></li>
             <li><a class="black-text" href="http://www.vcchurch.com/" target="_blank">Vineyard Laguna Niguel</a></li>
           </ul>
         </div>

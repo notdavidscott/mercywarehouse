@@ -64,29 +64,16 @@ $(document).ready(function() {
     
 }); 
 
-
 });
 
 
-
-
-
-
-
 });
-
-
-//get current year for copyright 
-
-let currentYear = "Copyright " + (new Date()).getFullYear() + " &#169; Mercy Warehouse";
-//console.log(currentYear);
-document.getElementById("getFooterText").innerHTML = currentYear;
 
 
 //actual return to top jquery
 $('#return-to-top').click(function() {      // button click
   $('body,html').animate({
-      scrollTop : 0                       // Scroll to albums
+      scrollTop : 0                       
   }, 500);
 });
 
@@ -99,14 +86,14 @@ $(function() {
 
   $('#toVideoContainer').click(function() {      // When arrow is clicked
     $('body,html').animate({
-        scrollTop : $('#videoContainer').position().top                      // Scroll to top of body
+        scrollTop : $('#videoContainer').position().top-100                      
     }, 600);
   });
 
   // go to mission section home page on large only
   $('#toMissionContainer').click(function() {      // When arrow is clicked
     $('body,html').animate({
-        scrollTop : $('#mission').position().top                      // Scroll to top of body
+        scrollTop : $('#mission').position().top-120                  
     }, 600);
   });
 
@@ -146,6 +133,70 @@ $(window).scroll(function() {
           $('.fixed-action-btn').fadeIn();
       }
 });
+
+
+//get current year for copyright 
+
+let currentYear = "Copyright " + (new Date()).getFullYear() + " &#169; Mercy Warehouse";
+//console.log(currentYear);
+document.getElementById("getFooterText").innerHTML = currentYear;
+
+var objToday = new Date(),
+	weekday = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'),
+	dayOfWeek = weekday[objToday.getDay()],
+	domEnder = function() { var a = objToday; if (/1/.test(parseInt((a + "").charAt(0)))) return "th"; a = parseInt((a + "").charAt(1)); return 1 == a ? "st" : 2 == a ? "nd" : 3 == a ? "rd" : "th" }(),
+	dayOfMonth = today + ( objToday.getDate() < 10) ? '0' + objToday.getDate() + domEnder : objToday.getDate() + domEnder,
+	months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'),
+	curMonth = months[objToday.getMonth()],
+	curYear = objToday.getFullYear(),
+	curHour = objToday.getHours() > 12 ? objToday.getHours() - 12 : (objToday.getHours() < 10 ? objToday.getHours() : objToday.getHours()),
+	curMinute = objToday.getMinutes() < 10 ? "0" + objToday.getMinutes() : objToday.getMinutes(),
+	curSeconds = objToday.getSeconds() < 10 ? "0" + objToday.getSeconds() : objToday.getSeconds(),
+	curMeridiem = objToday.getHours() > 12 ? "PM" : "AM";
+var today = curHour + ":" + curMinute + "." + curSeconds + curMeridiem + " " + dayOfWeek + " " + dayOfMonth + " of " + curMonth + ", " + curYear;
+
+//var curHour = 6;
+
+const isOpen = () => {
+
+  //core function +
+  if (
+    //mon thru friday hours 
+    ( dayOfWeek === "Monday" ||
+      dayOfWeek === "Tuesday" ||
+      dayOfWeek === "Wednesday" ||
+      dayOfWeek === "Thursday" ||
+      dayOfWeek === "Friday" 
+    ) && ( 
+          //close time (less than 8pm)            //open time (more than 10am)
+    ( curHour < 8 && curMeridiem === "PM") || (curHour >= 10 && curMeridiem === "AM"))) {
+      return "the mercy warehouse is open now!";
+      //console.log("We are open (weekday)");
+      } else if (
+        //sat hours                  //close time (less than 8pm)          //open time (more than 10am)                       
+     ( dayOfWeek == "Saturday" && ((curHour > 9 && curMeridiem === "PM") || (curHour >= 9 && curMeridiem === "AM")) )) {
+        return "the mercy warehouse is open now!";
+       // console.log("We are open (Saturday)");
+      } else if (
+        //sun hours                   //close time (less than 8pm)          //open time (more than 10am)
+     ( dayOfWeek == "Sunday" && ((curHour < 8 && curMeridiem === "PM") || (curHour == 12 && curMeridiem === "AM")) )) { 
+      //  console.log("We are open (Sunday)");
+        return "the mercy warehouse is open now";
+      } else {
+        return null;
+        //console.log("We are closed");
+      }
+
+}
+
+ console.log("It is currently " + dayOfWeek + " at the current hour of " + (curHour + curMeridiem)); 
+
+let isOpenResult = isOpen();
+//console.log(currentYear);
+document.getElementById("isOpenTextResult").innerHTML = isOpenResult;
+
+//end isOpen function 
+
 
 
 document.addEventListener('DOMContentLoaded', function() {
