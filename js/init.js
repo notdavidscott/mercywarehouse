@@ -156,23 +156,23 @@ var objToday = new Date(),
 var today = curHour + ":" + curMinute + "." + curSeconds + curMeridiem + " " + dayOfWeek + " " + dayOfMonth + " of " + curMonth + ", " + curYear;
 
 //var curHour = 6;
-//var dayOfMonth = 26;
+//console.log(dayOfMonth);
 //var curMonth = "January";
 const isOpen = () => {
 
-  if ( (dayOfMonth === 24) && (curMonth === "December") ) {
+  if ( (dayOfMonth === "24th") && (curMonth === "December") ) {
     return "Welcome! The Thift Store & Food Distribution are closed today for Christmas Eve";
     
-  } else if ( (dayOfMonth === 25) && (curMonth === "December") ){
+  } else if ( (dayOfMonth === "25th") && (curMonth === "December") ){
     return "Merry Christmas! The thrift store is closed today";
     //console.log("Closed for Christmas Day");
-  } else if ( (dayOfMonth === 26) && (curMonth === "December") ){
+  } else if ( (dayOfMonth === "26th") && (curMonth === "December") ){
     return "Welcome! The Thift Store & Food Distribution are closed today";
    // console.log("Closed for Boxing Day");  
-  } else if ( (dayOfMonth === 31) && (curMonth === "December") ){
+  } else if ( (dayOfMonth === "31st") && (curMonth === "December") ){
     return "The Thrift store is closed today for New Years Eve";
    // console.log("Closed for New Years Eve");
-  } else if ( (dayOfMonth === 1) && (curMonth === "January") ){
+  } else if ( (dayOfMonth === "1st") && (curMonth === "January") ){
     return "Store and Food Distribution is closed today, Happy New Year!";
    // console.log("Closed for New Years Day");
   }
